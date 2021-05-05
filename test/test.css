@@ -1,0 +1,43 @@
+.parent{
+    width:450px;
+    height:450ps;
+}
+
+.parent div{
+    font-size: 20px;
+}
+
+.A{
+    background:#8ff;
+    width: 300px;
+    height:150px;
+    float: left;
+}
+
+.B{
+    background:#f8f;
+    width: 150px;
+    height: 300px;
+    float: right;
+}
+
+.C{
+    background: #ff8;
+    width: 150px;
+    height: 300px;
+    float: left;
+}
+
+.D{
+    background: #88f;
+    width: 150px;
+    height: 150px;
+    float: left;
+}
+
+.E{
+    background: #f88;
+    width: 300px;
+    height: 150px;
+    float: right;
+}
