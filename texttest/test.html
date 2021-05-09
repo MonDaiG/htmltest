@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charaset="utf-8">
+        <title>test</title>
+        <link rel="stylesheet" href="test.css"
+    </head>
+    <body>
+        <div class="DR-023">
+            <!-- 段落を表すpタグ。brで強制改行するより段落ごとにpで囲う -->
+            <p>test</p>
+            <p>test2</p>
+            <p>test3</p>
+        </div>
+
+        <!-- フレージング要素(タグ)
+            i,b,strong,span,mark,img,input,textarea,label -->
+
+        <div class="DR-024">
+            <!-- 見出しタグh1~h6 -->
+            <h1>見出しh1</h1>
+            <h2>見出しh2</h2>
+        </div>
+
+        <div class="DR-025">
+            <!-- brタグを使うと段落ごとにpタグで改行するのと行間が変わる -->
+            <p>test<br>test2<br>test3</p>
+        </div>
+
+        <div class="DR-026 DR-027">
+            <!-- strongタグ、emタグとbタグ、iタグの比較
+                結論：同じ -->
+            <p>test <strong>test2</strong> <em>test3</em></p>
+            <p>test <b>test2</b> <i>test3</i></p>
+            <!-- uタグは下線 -->
+            <p>test <u>test2 test3</u></p>
+        </div>
+
+        <div class="DR-028">
+            <!-- preタグは囲った内容をスペースなどもそのまま出力する
+            そのため、インデントが揃えられない。
+            brタグを使うと解決できる
+            JSとかで変数使えないかな -->
+            <pre>s="spam"<br>print("s =", s)</pre>
+        </div>
+    </body>
+</html>

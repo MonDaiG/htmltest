@@ -1,0 +1,79 @@
+.flexbox{
+    width:500px;
+    height:500px;
+    background:#ccf;
+    border:solid 10px black
+}
+
+.flex1{
+    display:flex;
+    /* flexだけの指定だと左詰め、右方向に追加、高さはitemのheight
+        幅を超える場合はすべての要素のwidthをバランスよく縮小する */
+    /* flex-direction: row; デフォルト*/
+}
+
+.flex2{
+    display:flex;
+    /* 配置を右から左に変更 */
+    flex-direction: row-reverse;
+    /* スペース配置を左右で均等にする */
+    justify-content: space-around;
+    /*justify-content:start/先頭詰め
+                    end/末尾詰め
+                    center/中央揃え
+                    left/左揃え
+                    right/右揃え
+                    flex-start/交差軸で先頭寄せ
+                    flex-end/交差軸で末尾寄せ
+                    space-between/先頭は先頭寄せ、末尾は末尾寄せ、間は間隔均等
+                    space-around/先頭と末尾に半分の間隔をつけて、間は間隔均等
+                    space-evenly/全体的に間隔均等
+                    stretch/サイズがautoのアイテムは適宜引き延ばす
+                    safe center/
+                    unsafe center/
+                    */
+    /*縦方向の位置調整*/
+    align-items: center;/*<-endでは変わらないけどflex-endは変わる。*/
+    /* align-items: stretch
+                    center/中央寄せ==space-around
+                    start/先頭寄せ
+                    end/末尾寄せ
+                    flex-start
+                    flex-end
+                    *間隔は均等に割り振られる*/
+    /*縦方向の位置調整*/
+    align-content: space-around;
+    /* align-content: space-around
+                       */
+
+}
+
+.flex3{
+    display:flex;
+    /* 配置を上から左下に変更 */
+    flex-direction: column;
+    /* column指定で主軸と交差軸が変わるのでalign-itemsで左右位置調整になる */
+    align-items:flex-end;
+}
+
+.flex4{
+    display:flex;
+    /* height:150px; */
+    /* 親boxの幅を超えたとき折り返すかどうかの指定 */
+    flex-wrap:wrap;
+    /* flex-wrap: wrap/折り返して、下方向に次の要素を追加する
+                  nowrap/デフォルト、折り返しせず、すべての要素を均等に縮小する
+                  wrap-reverse/折り返し、上方向に次の要素を追加する */
+    /* align-items:center; */
+    align-content: space-around;
+}
+
+.flexbox div{
+    font-size: 20px;
+    width:150px;
+    height:150px;
+    background:skyblue;
+    border:blue 3px solid;
+    box-sizing:border-box;
+    padding:0px;
+}

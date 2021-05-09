@@ -1,0 +1,35 @@
+body{
+    background-color:#555;
+}
+.DR-023{
+    color:#88f;
+}
+.DR-023 p:nth-child(2){
+    /* 改行ごとに行われるスペースを削除する
+    ただしこの場合は、上下のp要素のmarginがあり、
+    もともと片方しか機能していなかったので変化はなし
+    (p1margin-top p1 p2margin-top p2 p3margin-top p3 p3margin-bottom)から
+    (p1margin-top p1 p1margin-bottom p2 p3margin-top p3 p3margin-bottom)になっただけ */
+    margin:0px;
+}
+
+.DR-024{
+    color:#8f8;
+}
+
+.DR-025{
+    color:#f88;
+    /* brタグでは1文ごとに縦方向のmarginは作られないのでDR-023とは出力が異なる
+    line-height:1em;でほぼ同じになる */
+    line-height:2em;
+}
+
+.DR-026{
+    color:#ff8;
+}
+
+.DR-028{
+    color:#f8f;
+    font-size: 16px;
+    font-family:monospace;
+}
