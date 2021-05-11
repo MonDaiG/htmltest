@@ -12,6 +12,11 @@
             <p>test2</p>
             <p>test3</p>
         </div>
+        
+        <div class="DR-025">
+            <!-- brタグを使うと段落ごとにpタグで改行するのと行間が変わる -->
+            <p>test<br>test2<br>test3</p>
+        </div>
 
         <!-- フレージング要素(タグ)
             i,b,strong,span,mark,img,input,textarea,label -->
@@ -22,10 +27,6 @@
             <h2>見出しh2</h2>
         </div>
 
-        <div class="DR-025">
-            <!-- brタグを使うと段落ごとにpタグで改行するのと行間が変わる -->
-            <p>test<br>test2<br>test3</p>
-        </div>
 
         <div class="DR-026 DR-027">
             <!-- strongタグ、emタグとbタグ、iタグの比較
@@ -42,6 +43,178 @@
             brタグを使うと解決できる
             JSとかで変数使えないかな -->
             <pre>s="spam"<br>print("s =", s)</pre>
+        </div>
+
+        <div class="DR-029">
+            <address>住所、地図、電話番号、メールアドレスなど</address>
+        </div>
+
+        <div class="DR-030">
+            x<sup>2</sup>とx<sub>2</sub>の違いを表現できる！
+        </div>
+
+        <div class="DR-031">
+            <!-- blockquoteのcite属性は表に現れない -->
+            <blockquote cite="https://mondaig.github.io/">問題児の隠れ処</blockquote>
+            <!-- citeも文字列としての表現だけ
+            ただし、斜体になる -->
+            <cite>https://mondaig.github.io/</cite>
+
+        </div>
+
+        <div class="DR-032">
+            <!-- 短い引用にはqタグ -->
+            <q cite="https://mondaig.github.io/">問題児の隠れ処</q>
+        </div>
+
+        <div class="DR-033">
+            <!-- datetime属性は表示には関係ない -->
+            <time datetime="2020-01-01">
+                17分前
+            </time>
+        </div>
+
+        <div class="DR-034">
+            <mark>spam</mark>ham<mark>spam</mark>egg<mark>spam</mark>!
+        </div>
+
+        <div class="DR-035">
+            弟子屈は<ruby><rb>弟子屈</rb><rp>(</rp><rt>でしくつ</rt><rp>)</rp></ruby>ではなく、
+            <ruby><rb>弟子屈</rb><rp>(</rp><rt>てしかが</rt><rp>)</rp></ruby>だ！
+        </div>
+
+        <div class="DR-036">
+            <ul>
+                <li><abbr title="Hyper Text Markup Language">HTML</abbr></li>
+                <li><abbr title="Cascading Style Sheets">CSS</abbr></li>
+                <li><abbr title="Uniform Resource Locator">URL</abbr></li>
+            </ul>
+        </div>
+
+        <div class="DR-037">
+            <del datetime="2020-02-14">(・∀・)ﾊﾊﾊ</del>　←どう見ても目線
+        </div>
+
+        <div class="DR-038">
+            <ins>(._.)</ins>
+            インサートがなぜ下線？
+            <ins class="delu">(._.)</ins>
+        </div>
+
+        <div class="DR-039">
+            print("spam")と<code>print("spam")</code>の違い
+        </div>
+
+        <div class="DR-040">
+            spamham<a href="icon3.png" title="実はクリックできるのだよ(・∀・)">spam</a>eggbacon
+        </div>
+
+        <div class="DR-041">
+            <!-- smallタグはコピーライトとか法的注意書きに使うらしい -->
+            <small>コピーライト？</small>
+        </div>
+
+        <div class="DR-042">
+            実態参照リスト
+            <ul>
+                <li>"&amp;amp;" = &amp;</li>
+                <li>"&amp;lt;" = &lt;</li>
+                <li>"&amp;gt;" = &gt;</li>
+                <li>"&amp;quot;" = &quot;</li>
+                <li>"&amp;nbsp;" = &nbsp;</li>
+                <li>"&amp;lsquo;" = &lsquo;</li>
+                <li>"&amp;rsquo;" = &rsquo;</li>
+                <li>"&amp;ldquo;" = &ldquo;</li>
+                <li>"&amp;rdquo;" = &rdquo;</li>
+                <li>"&amp;laquo;" = &laquo;</li>
+                <li>"&amp;raquo;" = &raquo;</li>
+                <li>"&amp;copy;" = &copy;</li>
+                <li>"&amp;reg;" = &reg;</li>
+                <li>"&amp;trade;" = &trade;</li>
+                <li>"&amp;yen;" = &yen;</li>
+                <li>"&amp;deg;" = &deg;</li>
+            </ul>
+        </div>
+
+        <div class="DR-043">
+            <a href="http://www.w3.org/TR/css3-color/#svg-color">カラーキーワード</a>
+            <a href="https://www.colordic.org/w">和名色と16進コード</a>
+        </div>
+
+        <div class="DR-044-046">
+            <span class="konruri">紺瑠璃</span>と<span class="rurikon">瑠璃紺</span>
+        </div>
+
+        <div class="DR-047">
+            <!-- remはbodyかhtmlタグのfontsizeを基準にしており、
+            emは親のfont-sizeを継承して基準にしている -->
+            <span class="frem">remプロパティ</span>と<span class="fem">emプロパティ</span>の違い
+        </div>
+        
+        <div class="DR-049">
+            <!-- font-weightは思ったような違いが出ないので使いにくい
+            boldとnormalしか結果に差がないし -->
+            <ul>
+                <li style="font-weight: 100;">weight100</li>
+                <li style="font-weight: 200;">weight200</li>
+                <li style="font-weight: 300;">weight300</li>
+                <li style="font-weight: 400;">weight400(default)</li>
+                <li style="font-weight: 500;">weight500</li>
+                <li style="font-weight: 600;">weight600</li>
+                <li style="font-weight: 700;">weight700</li>
+                <li style="font-weight: 800;">weight800</li>
+                <li style="font-weight: 900;">weight900</li>
+                <li style="font-weight: bold;">weight-bold</li>
+                <li style="font-weight: bolder;">weight-bolder</li>
+            </ul>
+        </div>
+
+        <div class="DR-051">
+            <b>bタグ</b>、<i>iタグ</i>を無理やりもとに戻す
+        </div>
+
+        <div class="DR-052">
+            <div class="left">左揃え</div>
+            <div class="center">中央揃え</div>
+            <div class="right">右揃え</div>
+        </div>
+
+        <div class="DR-053-054">
+            <span class="topline">spam</span> <span class="centerline">spam</span> <span class="bottomline">spam</span>
+        </div>
+
+        <div class="DR-055">
+            <mark>mark</mark>タグでマーカーを引く
+        </div>
+
+        <div class="DR-056-057">
+            <p>米：注釈などの先頭だけ揃えたい場合、padding-leftは先頭の文字数分em。text-indentは-文字数分emで設定</p>
+            <p>米：段落ごとの行間の空白をなくすにはpタグのmarginプロパティを0</p>
+        </div>
+
+        <div class="DR-058">
+            １文字目だけ大きくする方法は::first-letterセレクタで設定
+        </div>
+
+        <div class="DR-059">
+            １行目だけ変化させるのは::first-lineセレクタで設定
+        </div>
+
+        <div class="DR-060">
+            <p>コンテンツの</p>
+            <p>前後に</p>
+            <p>決まったテキストを</p>
+            <p>くっつけたい</p>
+        </div>
+    
+        <div class="DR-061">
+            数字実態参照リスト(&#+数字4桁+;)<br>
+            8451 : &#8451;<br>
+            <a href="https://unicode-table.com/jp/">これ</a>で文字を検索すればHTMLコードも確認できる
+        </div>
+
+        <div class="DR-062">
+            <q>quoteタグの前後につける記号を変える</q>
         </div>
     </body>
 </html>

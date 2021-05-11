@@ -1,5 +1,7 @@
 body{
-    background-color:#555;
+    background-color:#123;
+    font-size:large;
+    line-height: 1em;
 }
 .DR-023{
     color:#88f;
@@ -20,8 +22,9 @@ body{
 .DR-025{
     color:#f88;
     /* brタグでは1文ごとに縦方向のmarginは作られないのでDR-023とは出力が異なる
-    line-height:1em;でほぼ同じになる */
-    line-height:2em;
+    bodyのline-heightが1emじゃない(初期設定)と、
+    line-height:2;としてもpで分ける場合と行間が異なる*/
+    line-height:2;
 }
 
 .DR-026{
@@ -33,3 +36,230 @@ body{
     font-size: 16px;
     font-family:monospace;
 }
+
+.DR-029{
+    color:#8ff;
+}
+
+.DR-030{
+    color: #880;
+}
+
+.DR-030{
+    color:#808;
+}
+
+.DR-031{
+    color:#088;
+}
+
+.DR-032{
+    color:#ff8;
+}
+
+.DR-033{
+    color:#f8f;
+}
+
+.DR-034{
+    color: #8ff;
+}
+
+.DR-034 mark{
+    height:0.5em;
+    background-color: #800;
+}
+
+.DR-035{
+    color: #88f;
+}
+
+.DR-036{
+    color:#8f8;
+}
+
+.DR-036 abbr{
+    cursor:progress;
+    text-decoration: none;
+}
+
+.DR-037{
+    color: #f88;
+}
+
+.DR-038{
+    color:#880;
+}
+
+.delu{
+    text-decoration: none;
+}
+
+.DR-039{
+    color:#808;
+}
+
+code{
+    font-weight: bold;
+}
+
+.DR-040{
+    color:#088;
+}
+.DR-040 a{
+    cursor:auto;
+    color:#088;
+    text-decoration: none;
+}
+
+.DR-041{
+    color:#ff0;
+}
+
+.DR-042{
+    color:#f0f;
+}
+
+.DR-043{
+    color:#0ff;
+}
+
+.DR-044-046{
+    color:rgba(255,255,255,70%);
+    font-weight: 5px;
+    font-size:24px;
+    line-height:2em;
+    height:2em;
+}
+
+.rurikon{
+    background-color: #19448e;
+}
+
+.konruri{
+    background-color: #164a84;
+}
+
+.DR-047{
+    color:#ff8;
+    font-size:small;
+}
+
+.frem{
+    font-size: 2rem;
+}
+.fem{
+    font-size: 2em;
+}
+
+.DR-049{
+    color:#f8f;
+}
+
+.DR-051{
+    color:#8ff;
+}
+
+.DR-051 b,i{
+    font-weight:normal;
+    font-style:normal;
+}
+
+.DR-052{
+    color: #ff0;
+}
+.left{
+    text-align: left;
+}
+.center{
+    text-align: center;
+}
+.right{
+    text-align: right;
+}
+
+.DR-053-054{
+    color:#f0f;
+    line-height:2em;
+    letter-spacing: 1em;
+}
+.topline{
+    text-decoration: dotted overline;
+}
+.centerline{
+    text-decoration: wavy line-through;
+}
+.bottomline{
+    text-decoration: double underline;
+}
+
+.DR-055{
+    /* divのbackgroundプロパティはbox全体の背景色を設定 */
+    color: #0ff;
+    background:darkblue;
+}
+.DR-055 mark{
+    /* markはbackgroundはmarkタグで囲まれた部分だけの背景色 */
+    background:orange;
+    /* マーカーの太さの変え方がわからない */
+}
+
+.DR-056-057{
+    color:#880;
+    width:300px;
+}
+.DR-056-057 p{
+    /* paddingはボックス、テキスト全体に適用される空白
+    text-indentは段落の先頭にだけ適用される空白 */
+    margin:0;
+    padding-left: 2em;
+    text-indent: -2em;
+}
+
+.DR-058{
+    color:#808;
+    width:200px;
+}
+.DR-058::first-letter{
+    font-size: 3em;
+    float:left;
+    line-height:0.9em;
+}
+
+.DR-059{
+    color:#088;
+    width:200px;
+}
+.DR-059::first-line{
+    font-size: 1.5em;
+    line-height: 1.5em;
+    font-weight:bold;
+}
+
+.DR-060{
+    color:#ff8;
+}
+.DR-060 p::before{
+    content:"spam";
+}
+.DR-060 p::after{
+    content: "spam!!";
+}
+
+.DR-061{
+    color:#f8f;
+}
+
+.DR-062{
+    color:#8ff;
+}
+.DR-062 q{
+    quotes:"***" "***";
+}
+/* defaultで設定済み
+.DR-062 q::before{
+    content:open-quote;
+}
+.DR-062 q::after{
+    content:close-quote;
+}*/
