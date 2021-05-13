@@ -1,0 +1,79 @@
+body{
+    background-color: #123;
+}
+a{
+    color:#def;
+    text-decoration: none;
+}
+
+.DR-075{
+    color: #ff8;
+}
+
+.DR-076{
+    color: #f8f;
+}
+
+.DR-077{
+    color: #8ff;
+}
+:target{
+    background-color: red;
+}
+
+.DR-078-079{
+    color: #88f;
+}
+
+.DR-080{
+    color: #8f8;
+}
+
+.DR-081{
+    color: #f88;
+}
+.DR-081 a:link{
+    /* 移動したことのないリンクの設定 */
+    color: red;
+}
+.DR-081 a:visited{
+    /* 移動済みのリンクの設定 */
+    color: yellow;
+}
+.DR-081 a:hover{
+    /* マウスカーソルを重ねたと時の設定 */
+    color: green;
+}
+.DR-081 a:active{
+    /* マウスでクリックしているときの設定 */
+    color: blue;
+}
+
+.DR-082 a{
+    color:#ff0;
+}
+.DR-082 a:hover{
+    opacity: 0%;
+}
+
+.DR-083 a{
+    color:#f0f;
+    text-decoration: wavy line-through;
+}
+
+.DR-084-085 a{
+    color: #0ff;
+}
+.DR-084-085 a:hover{
+    background: #808;
+    outline: 3px dashed #ff0;
+}
+
+.DR-086 a{
+    color: #00f;
+    -webkit-tap-highlight-color: yellow;
+}
+
+.DR-091-092 a:hover{
+    opacity: 50%;
+}

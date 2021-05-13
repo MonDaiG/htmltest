@@ -1,0 +1,37 @@
+body{
+    background:#123;
+    font-size: 32px;
+}
+a{
+    text-decoration: none;
+}
+main{
+    background:#33c;
+}
+section{
+    border: 5px solid #8ff;
+}
+article{
+    border: 2px dotted #ff8;
+    color: #f8f;
+}
+
+.DR-105{
+    background:#335;
+    color: red;
+    border: solid 2px yellow;
+}
+
+.DR-106{
+    color:#8ff;
+}
+
+.DR-107 iframe{
+    width:90%;
+    height:300px;
+}
+
+.DR-108 iframe{
+    width:90%;
+    height:300px;
+}
